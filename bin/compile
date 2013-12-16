@@ -35,15 +35,12 @@ fi
 #
 NGINX_URL="https://s3.amazonaws.com/${S3_BUCKET}/nginx-${NGINX_VERSION}-heroku.tar.gz"
 PHP_URL="https://s3.amazonaws.com/${S3_BUCKET}/php-${PHP_VERSION}-with-fpm-heroku.tar.gz"
+WORDPRESS_URL="http://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"
 
-# Custom URLs for each language
-if ["$WORDPRESS_LANGUAGE" == "fi"]
-then
+if ["$WORDPRESS_LANGUAGE" == "fi"]; then
   WORDPRESS_URL="http://fi.wordpress.org/wordpress-${WORDPRESS_VERSION}-fi.tar.gz"
-else
-  WORDPRESS_URL="http://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"
 fi
-#
+
 
 function indent() {
   c='s/^/       /'
