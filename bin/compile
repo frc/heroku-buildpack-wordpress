@@ -37,7 +37,7 @@ NGINX_URL="https://s3.amazonaws.com/${S3_BUCKET}/nginx-${NGINX_VERSION}-heroku.t
 PHP_URL="https://s3.amazonaws.com/${S3_BUCKET}/php-${PHP_VERSION}-with-fpm-heroku.tar.gz"
 WORDPRESS_URL="http://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"
 
-if [ "$WORDPRESS_LANGUAGE" -eq "fi" ]; then
+if [ "$WORDPRESS_LANGUAGE" == "fi" ]; then
   WORDPRESS_URL="http://fi.wordpress.org/wordpress-${WORDPRESS_VERSION}-fi.tar.gz"
 fi
 
