@@ -55,6 +55,9 @@ WORDPRESS_URL="http://wordpress.org/wordpress-${WORDPRESS_VERSION}.tar.gz"
 if [ "$WORDPRESS_LANGUAGE" == "fi" ]; then
   WORDPRESS_URL="http://fi.wordpress.org/wordpress-${WORDPRESS_VERSION}-fi.tar.gz"
 fi
+if [ "$WORDPRESS_LANGUAGE" == "es_ES" ]; then
+  WORDPRESS_URL="http://es.wordpress.org/wordpress-${WORDPRESS_VERSION}-es_ES.tar.gz"
+fi
 
 function indent() {
   c='s/^/       /'
