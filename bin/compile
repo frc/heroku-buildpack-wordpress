@@ -29,7 +29,7 @@ if [ -z "$BUILDPACK_NGINX_VERSION" ]; then
 fi
 
 if [ -z "$BUILDPACK_PHP_VERSION" ]; then
-  BUILDPACK_PHP_VERSION=5.5.2
+  BUILDPACK_PHP_VERSION=5.5.10
 fi
 
 if [ -z "$BUILDPACK_WORDPRESS_VERSION" ]; then
@@ -37,7 +37,7 @@ if [ -z "$BUILDPACK_WORDPRESS_VERSION" ]; then
 fi
 
 if [ -z "$BUILDPACK_S3_BUCKET" ]; then
-  BUILDPACK_S3_BUCKET=heroku-buildpack-wordpress
+  BUILDPACK_S3_BUCKET=franticcom-heroku-buildpack-wordpress
 fi
 
 
