@@ -121,7 +121,7 @@ if [ ! -d ./vendor/php ]; then
 
   # install third-party json for newer versions of php
   echo "-------> Installing php5-json library"
-  sudo apt-get install php5-json
+  apt-get install php5-json
 fi
 
 # Wordpress
