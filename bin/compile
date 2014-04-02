@@ -120,6 +120,7 @@ if [ ! -d ./vendor/php ]; then
   curl --silent --max-time 60 --location $PHP_URL | tar xz
 
   # install third-party json for newer versions of php
+  echo "-------> Installing php5-json library"
   sudo apt-get install php5-json
 fi
 
