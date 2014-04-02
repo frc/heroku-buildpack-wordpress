@@ -118,10 +118,6 @@ if [ ! -d ./vendor/php ]; then
   echo "-----> Installing PHP v${BUILDPACK_PHP_VERSION}"
   mkdir -p ./vendor/php && cd ./vendor/php
   curl --silent --max-time 60 --location $PHP_URL | tar xz
-
-  # install third-party json for newer versions of php
-  echo "-------> Installing php5-json library"
-  apt-get install php5-json
 fi
 
 # Wordpress
