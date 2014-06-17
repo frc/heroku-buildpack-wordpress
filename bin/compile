@@ -78,7 +78,7 @@ if [ -z "$BUILDPACK_PHP_VERSION" ]; then
 fi
 
 if [ -z "$BUILDPACK_WORDPRESS_VERSION" ]; then
-  BUILDPACK_WORDPRESS_VERSION=3.8.3
+  BUILDPACK_WORDPRESS_VERSION=3.9.1
 fi
 
 if [ -z "$BUILDPACK_S3_BUCKET" ]; then
@@ -120,8 +120,8 @@ if [ ! -d ./vendor/php ]; then
   curl --silent --max-time 60 --location $PHP_URL | tar xz
 fi
 
-# Wordpress
-echo "-----> Installing Wordpress v${BUILDPACK_WORDPRESS_VERSION}"
+# WordPress
+echo "-----> Installing WordPress v${BUILDPACK_WORDPRESS_VERSION}"
 cd ${BUILD_DIR}
 curl --silent --max-time 60 --location $WORDPRESS_URL | tar xz
 

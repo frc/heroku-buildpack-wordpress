@@ -13,7 +13,10 @@ PHP
 * 5.4.11 (5.4-stable)
 * 5.3.9 (5.3-stable)
 
-Wordpress *downloaded directly* from [Wordpress](http://wordpress.org/download/release-archive/)
+WordPress *downloaded directly* from [WordPress](http://wordpress.org/download/release-archive/)
+* 3.9.1
+* 3.9
+* 3.8.2
 * 3.8.1
 * 3.8
 * 3.7.1
@@ -21,7 +24,7 @@ Wordpress *downloaded directly* from [Wordpress](http://wordpress.org/download/r
 * 3.5.1
 * 3.5.0
 
-Configure Wordpress on Heroku to use specific versions of Nginx and PHP
+Configure WordPress on Heroku to use specific versions of Nginx and PHP
 ```bash
 $ git clone git://github.com/your_name/wordpress-on-heroku.git mydogblog
 $ cd mydogblog
@@ -34,7 +37,7 @@ $ heroku config:set BUILDPACK_URL=https://github.com/mchung/heroku-buildpack-wor
 $ git push heroku master
 ```
 
-Configure existing Wordpress on Heroku to use a specific version of Wordpress
+Configure existing WordPress on Heroku to use a specific version of WordPress
 ```bash
 $ cd existing_wp
 $ heroku labs:enable user-env-compile
@@ -43,3 +46,6 @@ $ git push heroku master
 ```
 
 To request a new vendored package, [please file an issue](https://github.com/mchung/heroku-buildpack-wordpress/issues/new?title=Request%20for%20new%20vendor%20package&body=Hi-%0A%0APlease add:%0A%0A```%0Anginx-2.3.18%0Aphp-4.5%0A```%0A%0AThank%20you)
+Note that WordPress does not need to be vendored, you can set the WORDPRESS_VERSION to install any version of WordPress.
+
+
