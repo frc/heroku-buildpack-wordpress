@@ -1,5 +1,7 @@
 # Heroku buildpack: WordPress on Heroku
 
+# Deprecated: Use https://github.com/heroku/heroku-buildpack-php
+
 ### This is a Heroku buildpack for running [WordPress](http://wordpress.org) on [Heroku](http://heroku.com)
 
 It uses this [WordPress](http://github.com/mchung/wordpress-on-heroku) project template to bootstrap a highly tuned WordPress site built on the following stack:
